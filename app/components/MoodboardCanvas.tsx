@@ -120,7 +120,7 @@ export default function MoodboardCanvas({ product, inspirations }: Props) {
         <div className="flex flex-col gap-0.5 mt-1">
           <span className="text-xs font-mono tracking-widest uppercase text-zinc-400">{product.brand}</span>
           <span className="text-base font-bold text-zinc-900 leading-tight">{product.name}</span>
-          <span className="text-xs font-mono tracking-widest uppercase text-zinc-900">{product.price}</span>
+          <span className="text-sm font-mono tracking-widest uppercase text-zinc-900">{product.price}</span>
         </div>
       </div>
 
