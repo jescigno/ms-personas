@@ -1,0 +1,123 @@
+[
+{
+  "id": "soft-jersey-half-zip",
+  "name": "Soft Jersey Half Zip",
+  "brand": "Lululemon",
+  "price": "$98",
+  "image": "/images/products/soft-jersey-half-zip.jpeg",
+  "profile": "marcus",
+  "inspirations": ["lululemon", "comfort-fabric", "fitness", "kettlebell"],
+  "tags": ["green", "shirt", "casual", "earth-tone", "layering", "comfort", "minimalist", "versatile"]
+},
+{
+  "id": "steady-state-half-zip-sand",
+  "name": "Steady State Half Zip",
+  "brand": "Lululemon",
+  "price": "$128",
+  "image": "/images/products/steady-state-half-zip-sand.jpeg",
+  "profile": "marcus",
+  "inspirations": ["lululemon", "comfort-fabric", "federer", "fitness"],
+  "tags": ["beige", "shirt", "tan", "neutral", "fleece", "athletic", "casual", "layering", "comfort", "minimalist", "versatile", "half-zip", "sweatshirt"]
+},
+{
+  "id": "session-short-black",
+  "name": "Session Short",
+  "brand": "Ten Thousand",
+  "price": "$88",
+  "image": "/images/products/session-short-black.jpeg",
+  "profile": "marcus",
+  "inspirations": ["ten-thousand", "federer", "running", "fitness"],
+  "tags": ["black", "shorts", "running", "training", "minimalist", "lightweight", "breathable", "performance", "athletic", "no-fluff"]
+},
+{
+  "id": "airpods-pro-3",
+  "name": "AirPods Pro 3",
+  "brand": "Apple",
+  "price": "$249",
+  "image": "/images/products/airpods-pro-3.jpg",
+  "profile": "marcus",
+  "inspirations": ["apple", "running", "fitness", "kendrick"],
+  "tags": ["white", "earbuds", "wireless", "noise-cancelling", "audio", "fitness", "heart-rate", "headphones", "airpods", "tech", "smart-device"]
+},
+{
+  "id": "leica-q3-43",
+  "name": "Leica Q3 43",
+  "brand": "Leica",
+  "price": "$7,950",
+  "image": "/images/products/leica-q3-43.jpeg",
+  "profile": "marcus",
+  "inspirations": ["tokyo", "virgil", "craftmanship", "minimalism"],
+  "tags": ["black", "camera", "full-frame", "compact", "photography", "street-photography", "analog-aesthetic", "premium", "luxury", "minimalist", "craft", "made-in-germany"]
+},
+ {
+    "id": "corduroy-overshirt",
+    "name": "Wide-Wale Corduroy Overshirt",
+    "brand": "A Day's March (Vintage Resale)",
+    "price": "$58",
+    "image": "/images/products/cord-shirt.jpg",
+    "profile": "jordan",
+    "inspirations": ["bowie", "japanese-streetwear", "colors-jewel", "recycled-materials"],
+    "tags": ["corduroy", "shirt", "oversized", "unisex", "vintage", "small-label", "earthy", "70s", "layering", "thrifted", "gender-inclusive"]
+  },
+  {
+    "id": "corduroy-trousers-rust-flare",
+    "name": "70s High Flare Corduroy Trousers",
+    "brand": "Levi's (Vintage Resale)",
+    "price": "$72",
+    "image": "/images/products/cord-pants.jpg",
+    "profile": "jordan",
+    "inspirations": ["bowie", "vintage-music", "ethical-fashion", "handmade"],
+    "tags": ["pants", "corduroy", "flared", "trousers", "high-waist", "vintage", "70s", "earthy", "unisex", "thrifted", "gender-inclusive"]
+  },
+  {
+    "id": "suede-boots-vintage-chukka",
+    "name": "Vintage Suede Chukka Boots",
+    "brand": "Hush Puppies (Vintage Resale)",
+    "price": "$68",
+    "image": "/images/products/suede-shoes.jpg",
+    "profile": "jordan",
+    "inspirations": ["minimalism", "handmade", "ethical-fashion", "janelle"],
+    "tags": ["shoes", "suede", "boots", "chukka", "vintage", "70s", "earthy", "unisex", "thrifted", "gender-inclusive", "small-label"]
+  },
+  {
+    "id": "wool-rug-70s-geometric",
+    "name": "Hand-Tufted 70s Geometric Wool Rug",
+    "brand": "Etsy Artisan Studio",
+    "price": "$245",
+    "image": "/images/products/jordan-rug.jpg",
+    "profile": "jordan",
+    "inspirations": ["colors-jewel", "craftmanship", "70s-inspired", "mood-enhancing"],
+    "tags": ["burnt-orange", "wool", "hand-tufted", "geometric", "rug", "70s", "mid-century", "earthy", "small-label", "woman-owned", "home"]
+  },
+  {
+    "id": "ceramic-planter-small-batch",
+    "name": "Small-Batch Ceramic Planter",
+    "brand": "Independent Ceramic Studio",
+    "price": "$42",
+    "image": "/images/products/cermaic-planter.jpg",
+    "profile": "jordan",
+    "inspirations": ["ceramics", "handmade", "sustainable-earth", "minimalism"],
+    "tags": ["terracotta", "ceramic", "planter", "small-batch", "handmade", "earthy", "small-label", "sustainable", "home", "good-on-you-rated"]
+  },
+  {
+    "id": "turntable-refurbished-vintage",
+    "name": "Refurbished Mid-Century Turntable",
+    "brand": "Turntable Doc",
+    "price": "$425",
+    "image": "/images/products/turntable.jpg",
+    "profile": "jordan",
+    "inspirations": ["bowie", "kidcudi", "janelle", "vintage-music"],
+    "tags": ["walnut", "turntable", "refurbished", "vintage", "70s", "mid-century", "small-label", "audio-specialist", "home", "music"]
+  },
+  {
+    "id": "tizio-style-desk-lamp",
+    "name": "Tizio-Style Counterbalance Desk Lamp",
+    "brand": "Artemide (Vintage Resale)",
+    "price": "$295",
+    "image": "/images/products/jordan-lamp.jpg",
+    "profile": "jordan",
+    "inspirations": ["minimalism", "italian-design", "tokyo", "vintage-music"],
+    "tags": ["black", "lamp", "desk-lamp", "halogen", "counterbalance", "vintage", "70s", "postmodern", "small-label", "home", "made-in-italy"]
+  }
+  
+]

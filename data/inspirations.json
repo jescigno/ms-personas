@@ -1,0 +1,172 @@
+[
+  {
+    "id": "apple",
+    "label": "/FAVORITE BRANDS\n/APPLE",
+    "image": "/images/inspirations/logo-apple.png",
+    "size": "xsmall",
+    "tags": ["tech", "minimalist", "premium", "ecosystem", "clean-design", "iconic", "black"]
+  },
+  {
+    "id": "lululemon",
+    "label": "/FAVORITE BRANDS\n/LULULEMON",
+    "image": "/images/inspirations/logo-lululemon.png",
+    "size": "xsmall",
+    "tags": ["athletic", "performance", "minimalist", "versatile", "premium", "activewear", "functional"]
+  },
+    {
+    "id": "ten-thousand",
+    "label": "/FAVORITE BRANDS\n/TEN THOUSAND",
+    "image": "/images/inspirations/logo-tenthousand.png",
+    "size": "xsmall",
+    "tags": ["athletic", "performance", "minimalist", "versatile", "premium", "activewear", "functional"]
+  },
+  {
+    "id": "federer",
+    "label": "/ICONS\n/ROGER FEDERER",
+    "image": "/images/inspirations/icon_federer.jpg",
+    "size": "small",
+    "tags": ["athletic-refined", "tailored", "effortless", "neutral", "elevated", "sport", "sophisticated"]
+  },
+  {
+    "id": "virgil",
+    "label": "/ICONS\n/VIRGIL ABLOH",
+    "image": "/images/inspirations/icon_virgil.jpg",
+    "size": "small",
+    "tags": ["streetwear", "luxury", "black-culture", "design", "creative-director", "boundary-pushing", "legacy"]
+  },
+  {
+    "id": "comfort-fabric",
+    "label": "/MATERIALS\n/COMFORT FABRIC",
+    "image": "/images/inspirations/comfort-fabric.png",
+    "size": "medium",
+    "tags": ["fleece", "soft", "layering", "comfort", "earth-tone", "tactile", "premium-feel"]
+  },
+  {
+    "id": "fitness",
+    "label": "/INTERESTS\n/FITNESS\n/GYM",
+    "image": "/images/inspirations/fitness.jpeg",
+    "size": "large",
+    "tags": ["gym", "training", "strength", "performance", "athletic", "focused", "discipline"]
+  },
+  {
+    "id": "kettlebell",
+    "label": "/INTERESTS\n/FITNESS\n/KETTLEBELL",
+    "image": "/images/inspirations/fitness-kettlebell.jpeg",
+    "size": "large",
+    "tags": ["kettlebell", "conditioning", "functional-fitness", "intensity", "training", "athletic", "sweat"]
+  },
+  {
+    "id": "running",
+    "label": "/INTERESTS\n/FITNESS\n/RUNNING",
+    "image": "/images/inspirations/running.png",
+    "size": "large",
+    "tags": ["running", "cardio", "outdoor", "strava", "lightweight", "breathable", "morning-run"]
+  }, {
+    "id": "tokyo",
+    "label": "/INTERESTS\n/TRAVEL\n/TOKYO",
+    "image": "/images/inspirations/tokyo.jpeg",
+    "size": "large",
+    "tags": ["camera", "travel", "japan", "photography", "cool"]
+  },{
+  "id": "minimalism",
+  "label": "/AESTHETIC\n/MINIMALISM",
+  "image": "/images/inspirations/minimalism.jpeg",
+  "size": "large",
+  "tags": ["minimalist", "clean", "restrained", "intentional", "monochrome", "black", "white", "negative-space", "precision", "craft", "timeless", "no-fluff"]
+},{
+"id": "kendrick",
+"label": "/MUSIC\n/KENDRICK LAMAR",
+"image": "/images/inspirations/icon_kendrick.png",
+"size": "small",
+"tags": ["culture", "understated", "intentional", "neutral", "premium-basics", "no-logos", "street", "refined", "cultural-icon", "quiet-power"]
+},{
+"id": "craftmanship",
+"label": "/QUALITIES\n/CRAFTMANSHIP",
+"image": "/images/inspirations/craftmanship.jpeg",
+"size": "medium",
+"tags": ["craft", "heritage", "intentional", "neutral", "premium-basics", "no-logos", "refined"]}
+,{
+"id": "bowie",
+"label": "/ICONS\n/DAVID BOWIE",
+"image": "/images/inspirations/bowie.jpg",
+"size": "small",
+"tags": ["bowie", "music", "vintage", "70s", "iconic"]}
+,{
+"id": "handmade",
+"label": "/QUALITIES\n/HANDMADE",
+"image": "/images/inspirations/handmade.jpg",
+"size": "medium",
+"tags": ["handmade", "ceramics"]}
+,{
+"id": "colors-jewel",
+"label": "/COLORS\n/JEWEL TONES",
+"image": "/images/inspirations/colors-jewel.jpg",
+"size": "medium",
+"tags": ["colors", "jewel"]}
+,{
+"id": "ceramics",
+"label": "/HOME\n/CERAMICS",
+"image": "/images/inspirations/CERAMICS.jpg",
+"size": "medium",
+"tags": ["ceramics"]}
+,{
+"id": "kidcudi",
+"label": "/MUSIC\n/KID CUDI",
+"image": "/images/inspirations/kidcudi.jpg",
+"size": "small",
+"tags": ["kid cudi", "music", "iconic"]}
+,{
+"id": "janelle",
+"label": "/ICONS\n/FASHION\n/JANELLE MONAE",
+"image": "/images/inspirations/janelle.jpeg",
+"size": "small",
+"tags": ["janelle"]}
+,{
+"id": "sustainable-earth",
+"label": "/PRIORITIES\n/SUSTAINABILITY",
+"image": "/images/inspirations/sustainable-earth.jpg",
+"size": "medium",
+"tags": ["sustainable", "earth", "eco-friendly"]}
+,{
+"id": "recycled-materials",
+"label": "/PRIORITIES\n/RECYCLED MATERIALS",
+"image": "/images/inspirations/recycle.jpg",
+"size": "medium",
+"tags": ["sustainable", "earth", "eco-friendly"]}
+,{
+"id": "ethical-fashion",
+"label": "/PRIORITIES\n/ETHICAL FASHION",
+"image": "/images/inspirations/ethical-fashion.jpg",
+"size": "large",
+"tags": ["sustainable", "earth", "eco-friendly"]}
+,{
+"id": "vintage-music",
+"label": "/PRIORITIES\n/VINTAGE MUSIC",
+"image": "/images/inspirations/vintage-music.jpg",
+"size": "large",
+"tags": ["vintage", "music", "nostalgic"]}
+,{
+"id": "italian-design",
+"label": "/STYLE\n/ITALIAN DESIGN",
+"image": "/images/inspirations/italian-design.jpg",
+"size": "large",
+"tags": ["vintage", "music", "nostalgic"]}
+,{
+"id": "japanese-streetwear",
+"label": "/STYLE\n/JAPANESE STREETWEAR",
+"image": "/images/inspirations/japanese-streetwear.jpeg",
+"size": "large",
+"tags": ["japanese", "streetwear", "tokyo", "fashion", "versatile"]}
+,{
+"id": "70s-inspired",
+"label": "/STYLE\n/70s INSPIRED",
+"image": "/images/inspirations/70s-inspired.jpeg",
+"size": "large",
+"tags": ["70s", "music", "nostalgic"]}
+,{
+"id": "mood-enhancing",
+"label": "/VIBES\n/DOPAMINE-OBJECT",
+"image": "/images/inspirations/mood-enhancing.jpg",
+"size": "large",
+"tags": ["joy", "dopamine", "mood-enhancing", "colorful", "playful", "fun"]}
+]
