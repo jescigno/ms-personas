@@ -38,15 +38,13 @@ export default function MappingPage() {
   const [active, setActive] = useState<"products" | "inspirations" | "layouts">("products");
 
   return (
-    <div className="min-h-screen bg-zinc-50 flex flex-col">
-      {/* Header */}
-      <header className="w-full bg-black px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xs font-semibold text-white uppercase">
-          ← Back to Chat
+    <div className="min-h-screen bg-zinc-50 flex flex-col relative">
+      <div className="absolute top-4 left-6 z-10">
+        <Link href="/" className="flex items-center gap-1 text-xs font-semibold text-zinc-900 uppercase rounded-lg pl-1 pr-3 py-2 bg-black/10">
+          <Image src="/images/icons/arrow.svg" alt="" width={16} height={16} />
+          Back to Chat
         </Link>
-        <h1 className="text-base font-semibold text-white">Mapping</h1>
-        <div className="w-16" />
-      </header>
+      </div>
 
       {/* Toggle */}
       <div className="w-full px-6 mt-16">
@@ -77,11 +75,10 @@ export default function MappingPage() {
 
         {/* Products grouped by persona */}
         {active === "products" && <section>
-          <div className="mb-4" />
           {Array.from(new Set((products as Product[]).map((p) => p.profile))).map((profile) => {
             const profileProducts = (products as Product[]).filter((p) => p.profile === profile);
             return (
-              <div key={profile} className="mb-12">
+              <div key={profile} className="mb-16">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-zinc-200">
                     <Image
