@@ -106,9 +106,9 @@
 ,{
 "id": "ceramics",
 "label": "/HOME\n/CERAMICS",
-"image": "/images/inspirations/CERAMICS.jpg",
+"image": "/images/inspirations/ceramics.jpg",
 "size": "medium",
-"tags": ["ceramics"]}
+"tags": ["ceramics", "handmade", "craft", "home"]}
 ,{
 "id": "kidcudi",
 "label": "/MUSIC\n/KID CUDI",
