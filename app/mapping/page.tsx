@@ -6,6 +6,7 @@ import products from "@/data/products.json";
 import Image from "next/image";
 import Link from "next/link";
 import MoodboardCanvas from "@/app/components/MoodboardCanvas";
+import ProductGrid from "@/app/components/ProductGrid";
 
 type Inspiration = {
   id: string;
@@ -243,18 +244,30 @@ export default function MappingPage() {
                     <h3 className="text-lg font-semibold tracking-widest uppercase text-zinc-900">{profile}</h3>
                     <span className="text-xs text-zinc-400">{profileProducts.length} products</span>
                   </div>
-                  <div className="flex flex-col gap-16">
-                    {profileProducts.map((product) => {
-                      const linkedInspirations = product.inspirations
-                        .map((id) => inspirationMap[id])
-                        .filter(Boolean) as Inspiration[];
-                      return (
-                        <div key={product.id} className="max-w-4xl">
-                          <MoodboardCanvas product={product} inspirations={linkedInspirations} />
+                  {profile === "olivia" ? (
+                    <div className="flex flex-col gap-16">
+                      {Array.from({ length: Math.ceil(profileProducts.length / 3) }, (_, i) =>
+                        profileProducts.slice(i * 3, i * 3 + 3)
+                      ).map((chunk, i) => (
+                        <div key={i} className="max-w-4xl">
+                          <ProductGrid products={chunk} />
                         </div>
-                      );
-                    })}
-                  </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="flex flex-col gap-16">
+                      {profileProducts.map((product) => {
+                        const linkedInspirations = product.inspirations
+                          .map((id) => inspirationMap[id])
+                          .filter(Boolean) as Inspiration[];
+                        return (
+                          <div key={product.id} className="max-w-4xl">
+                            <MoodboardCanvas product={product} inspirations={linkedInspirations} />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               );
             })}
