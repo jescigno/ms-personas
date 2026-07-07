@@ -30,6 +30,16 @@
   "tags": ["black", "shorts", "running", "training", "minimalist", "lightweight", "breathable", "performance", "athletic", "no-fluff"]
 },
 {
+  "id": "interval-short-black",
+  "name": "Interval Short",
+  "brand": "Ten Thousand",
+  "price": "$88",
+  "image": "/images/products/interval-short-black.jpeg",
+  "profile": "marcus",
+  "inspirations": ["ten-thousand", "whoop", "distance-running", "fitness"],
+  "tags": ["compression shorts", "compression", "training", "minimalist", "lightweight", "breathable", "performance", "athletic", "no-fluff"]
+},
+{
   "id": "airpods-pro-3",
   "name": "AirPods Pro 3",
   "brand": "Apple",
@@ -118,6 +128,66 @@
     "profile": "jordan",
     "inspirations": ["minimalism", "italian-design", "virgil", "vintage-music"],
     "tags": ["black", "lamp", "desk-lamp", "halogen", "counterbalance", "vintage", "70s", "postmodern", "small-label", "home", "made-in-italy"]
+  },
+  {
+    "id": "dora-backpack-target",
+    "name": "Bioworld Dora the Explorer Animated 5-Piece 16” Backpack And Lunch Set For School & Travel",
+    "brand": "Target",
+    "price": "$34.99",
+    "image": "/images/products/dora-talking-backpack-with-map.jpg",
+    "profile": "olivia",
+    "inspirations": ["exploration", "animal-companions", "early-reader", "pretend-play"],
+    "tags": ["gift", "backpack", "birthday-gift", "age-6", "interactive", "school", "character"]
+  },
+  {
+    "id": "dora-storybook-set-target",
+    "name": "Dora & Friends Bilingual Storybook Set (10 Stories in One Big Book)",
+    "brand": "Target",
+    "price": "$24.99",
+    "image": "/images/products/dora-bilingual-storybook-set.jpg",
+    "profile": "olivia",
+    "inspirations": ["reading-comprehension", "bilingual-spanish", "storytime", "age-5-7"],
+    "tags": ["gift", "books", "birthday-gift", "age-6", "bilingual", "learning", "character"]
+  },
+  {
+    "id": "dora-puzzle-target",
+    "name": "Dora the Explorer Adventure Map Puzzle (60 pc)",
+    "brand": "Target",
+    "price": "$14.99",
+    "image": "/images/products/dora-adventure-map-puzzle.jpg",
+    "profile": "olivia",
+    "inspirations": ["exploration", "problem-solving", "fine-motor", "solo-focus"],
+    "tags": ["gift", "puzzle", "birthday-gift", "age-6", "screen-free", "character"]
+  },
+    {
+    "id": "dora-backpack-local",
+    "name": "Dora the Explorer Backpack-Adventurous Backpack with Map for Kids",
+    "brand": "Zenido",
+    "price": "$24.99",
+    "image": "/images/products/dora-backpack-local.jpg",
+    "profile": "olivia",
+    "inspirations": ["exploration", "animal-companions", "early-reader", "pretend-play"],
+    "tags": ["local", "backpack", "birthday-gift", "age-6", "interactive", "school", "character"]
+  },
+  {
+    "id": "dora-storybook-set-local",
+    "name": "Dora the Explorer Storybook Set (4 books)",
+    "brand": "AbeBooks",
+    "price": "$12.99",
+    "image": "/images/products/dora-books-set-local.jpg",
+    "profile": "olivia",
+    "inspirations": ["reading-comprehension", "bilingual-spanish", "storytime", "age-5-7"],
+    "tags": ["local", "books", "birthday-gift", "age-6", "bilingual", "learning", "character"]
+  },
+  {
+    "id": "dora-stickers-local",
+    "name": "Dora Magnetic Playset, 75 Characters & Accessories",
+    "brand": "ABC Kids",
+    "price": "$11.99",
+    "image": "/images/products/dora-stickers-local.jpg",
+    "profile": "olivia",
+    "inspirations": ["exploration", "problem-solving", "fine-motor", "solo-focus"],
+    "tags": ["local", "puzzle", "birthday-gift", "age-6", "screen-free", "character"]
   }
-  
+
 ]

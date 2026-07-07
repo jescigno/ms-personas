@@ -79,7 +79,7 @@ export default function MappingPage() {
             const profileProducts = (products as Product[]).filter((p) => p.profile === profile);
             return (
               <div key={profile} className={`mb-16${profile === "marcus" ? " mt-4" : ""}`}>
-                <div className="flex items-center gap-3 mb-5">
+                <div className={`flex items-center gap-3 mb-5${profile !== "marcus" ? " pt-6" : ""}`}>
                   <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-zinc-200">
                     <Image
                       src={`/images/profiles/${profile.charAt(0).toUpperCase() + profile.slice(1)}.png`}

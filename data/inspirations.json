@@ -12,6 +12,13 @@
     "image": "/images/inspirations/logo-lululemon.png",
     "size": "xsmall",
     "tags": ["athletic", "performance", "minimalist", "versatile", "premium", "activewear", "functional"]
+  }, 
+  {
+    "id": "whoop",
+    "label": "/FAVORITE BRANDS\n/WHOOP",
+    "image": "/images/inspirations/logo-whoop.png",
+    "size": "xsmall",
+    "tags": ["athletic", "performance", "minimalist", "versatile", "premium", "activewear", "functional"]
   },
     {
     "id": "ten-thousand",
@@ -61,7 +68,15 @@
     "image": "/images/inspirations/running.png",
     "size": "large",
     "tags": ["running", "cardio", "outdoor", "strava", "lightweight", "breathable", "morning-run"]
-  }, {
+  },
+  {
+    "id": "distance-running",
+    "label": "/INTERESTS\n/FITNESS\n/DISTANCE RUNNING",
+    "image": "/images/inspirations/distance-running.jpg",
+    "size": "large",
+    "tags": ["running", "cardio", "outdoor", "strava", "lightweight", "breathable", "morning-run"]
+  } ,
+  {
     "id": "tokyo",
     "label": "/INTERESTS\n/TRAVEL\n/TOKYO",
     "image": "/images/inspirations/tokyo.jpeg",

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ChatInput from "./components/ChatInput";
 import MoodboardCanvas from "./components/MoodboardCanvas";
+import ProductGrid from "./components/ProductGrid";
 import ProfileSwitcher, { type Profile } from "./components/ProfileSwitcher";
 
 type InspirationItem = {
@@ -24,8 +25,9 @@ type ProductItem = {
 };
 
 type MoodboardResult = {
-  product: ProductItem;
-  inspirations: InspirationItem[];
+  product?: ProductItem;
+  inspirations?: InspirationItem[];
+  products?: ProductItem[];
   queryTags: string[];
 };
 
@@ -105,7 +107,11 @@ export default function Home() {
 
         {result && !loading && (
           <div className="flex flex-col gap-4">
-            <MoodboardCanvas product={result.product} inspirations={result.inspirations} />
+            {result.products ? (
+              <ProductGrid products={result.products} />
+            ) : result.product && result.inspirations ? (
+              <MoodboardCanvas product={result.product} inspirations={result.inspirations} />
+            ) : null}
           </div>
         )}
       </div>

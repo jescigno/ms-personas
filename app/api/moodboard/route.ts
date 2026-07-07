@@ -40,6 +40,10 @@ export async function POST(request: NextRequest) {
     .map((p: Product) => ({ ...p, score: scoreByTags(p.tags, queryTags) }))
     .sort((a, b) => b.score - a.score);
 
+  if (profile === "olivia") {
+    return Response.json({ products: scoredProducts.slice(0, 3), queryTags });
+  }
+
   const product = scoredProducts[0] ?? pool[0];
 
   // Use explicitly curated inspirations if defined on the product, otherwise fall back to tag-matching
