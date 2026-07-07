@@ -246,13 +246,28 @@ export default function MappingPage() {
                   </div>
                   {profile === "olivia" ? (
                     <div className="flex flex-col gap-16">
-                      {Array.from({ length: Math.ceil(profileProducts.length / 3) }, (_, i) =>
-                        profileProducts.slice(i * 3, i * 3 + 3)
-                      ).map((chunk, i) => (
-                        <div key={i} className="max-w-4xl">
-                          <ProductGrid products={chunk} />
-                        </div>
-                      ))}
+                      {Array.from({ length: Math.ceil(profileProducts.length / 4) }, (_, i) =>
+                        profileProducts.slice(i * 4, i * 4 + 4)
+                      ).map((chunk, i) => {
+                        const [hero, ...supporting] = chunk;
+                        const heroInspirations = hero.inspirations
+                          .map((id) => inspirationMap[id])
+                          .filter(Boolean) as Inspiration[];
+                        return (
+                          <div key={i} className="max-w-4xl flex flex-col">
+                            <MoodboardCanvas
+                              product={hero}
+                              inspirations={heroInspirations}
+                              label="MY ARRAY - OLIVIA"
+                              roundedBottom={supporting.length === 0}
+                              scale={0.8}
+                            />
+                            {supporting.length > 0 && (
+                              <ProductGrid products={supporting} variant="embedded" />
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   ) : (
                     <div className="flex flex-col gap-16">

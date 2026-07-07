@@ -40,10 +40,6 @@ export async function POST(request: NextRequest) {
     .map((p: Product) => ({ ...p, score: scoreByTags(p.tags, queryTags) }))
     .sort((a, b) => b.score - a.score);
 
-  if (profile === "olivia") {
-    return Response.json({ products: scoredProducts.slice(0, 3), queryTags });
-  }
-
   const product = scoredProducts[0] ?? pool[0];
 
   // Use explicitly curated inspirations if defined on the product, otherwise fall back to tag-matching
@@ -61,6 +57,11 @@ export async function POST(request: NextRequest) {
       .map((i: Inspiration) => ({ ...i, score: scoreByTags(i.tags, combinedTags) }))
       .sort((a, b) => b.score - a.score)
       .slice(0, 4);
+  }
+
+  if (profile === "olivia") {
+    const supporting = scoredProducts.filter((p) => p.id !== product.id).slice(0, 3);
+    return Response.json({ product, inspirations: picked, products: supporting, queryTags });
   }
 
   return Response.json({ product, inspirations: picked, queryTags });

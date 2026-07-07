@@ -107,10 +107,21 @@ export default function Home() {
 
         {result && !loading && (
           <div className="flex flex-col gap-4">
-            {result.products ? (
+            {result.product && result.inspirations ? (
+              <div className="flex flex-col">
+                <MoodboardCanvas
+                  product={result.product}
+                  inspirations={result.inspirations}
+                  label={activeProfile === "olivia" ? "MY ARRAY - OLIVIA" : "MY ARRAY"}
+                  roundedBottom={!(result.products && result.products.length > 0)}
+                  scale={activeProfile === "olivia" ? 0.8 : 1}
+                />
+                {result.products && result.products.length > 0 && (
+                  <ProductGrid products={result.products} variant="embedded" />
+                )}
+              </div>
+            ) : result.products ? (
               <ProductGrid products={result.products} />
-            ) : result.product && result.inspirations ? (
-              <MoodboardCanvas product={result.product} inspirations={result.inspirations} />
             ) : null}
           </div>
         )}

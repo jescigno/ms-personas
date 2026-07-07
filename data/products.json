@@ -37,7 +37,7 @@
   "image": "/images/products/interval-short-black.jpeg",
   "profile": "marcus",
   "inspirations": ["ten-thousand", "whoop", "distance-running", "fitness"],
-  "tags": ["compression shorts", "compression", "training", "minimalist", "lightweight", "breathable", "performance", "athletic", "no-fluff"]
+  "tags": ["compression shorts", "compression", "interval", "minimalist", "lightweight", "breathable", "performance", "athletic", "no-fluff"]
 },
 {
   "id": "airpods-pro-3",
@@ -160,13 +160,23 @@
     "tags": ["gift", "puzzle", "birthday-gift", "age-6", "screen-free", "character"]
   },
     {
+    "id": "dora-activity-backpack",
+    "name": "Dora Ultimate Activity Backpack, 10+ Creative Projects in a Reusable Bag",
+    "brand": "Target",
+    "price": "$16.99",
+    "image": "/images/products/dora-activity-backpack.jpg",
+    "profile": "olivia",
+    "inspirations": ["exploration", "problem-solving", "fine-motor", "solo-focus"],
+    "tags": ["gift", "puzzle", "birthday-gift", "age-6", "screen-free", "character"]
+  },
+    {
     "id": "dora-backpack-local",
     "name": "Dora the Explorer Backpack-Adventurous Backpack with Map for Kids",
     "brand": "Zenido",
     "price": "$24.99",
     "image": "/images/products/dora-backpack-local.jpg",
     "profile": "olivia",
-    "inspirations": ["exploration", "animal-companions", "early-reader", "pretend-play"],
+    "inspirations": ["exploration", "animal-companions", "early-reader", "shop-local"],
     "tags": ["local", "backpack", "birthday-gift", "age-6", "interactive", "school", "character"]
   },
   {
@@ -185,6 +195,16 @@
     "brand": "ABC Kids",
     "price": "$11.99",
     "image": "/images/products/dora-stickers-local.jpg",
+    "profile": "olivia",
+    "inspirations": ["exploration", "problem-solving", "fine-motor", "solo-focus"],
+    "tags": ["local", "puzzle", "birthday-gift", "age-6", "screen-free", "character"]
+  },
+    {
+    "id": "dora-microphone",
+    "name": "Dora, Rainforest Rhythms Microphone with Music, Sound Fx & Bilingual Phrases",
+    "brand": "Kids World",
+    "price": "$7.60",
+    "image": "/images/products/dora-microphone.jpg",
     "profile": "olivia",
     "inspirations": ["exploration", "problem-solving", "fine-motor", "solo-focus"],
     "tags": ["local", "puzzle", "birthday-gift", "age-6", "screen-free", "character"]

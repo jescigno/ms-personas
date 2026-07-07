@@ -22,9 +22,14 @@ type ProductItem = {
 type Props = {
   product: ProductItem;
   inspirations: InspirationItem[];
+  label?: string;
+  /** Set to false when a card (e.g. ProductGrid in "embedded" mode) will be appended directly below, so corners stay square on that edge. */
+  roundedBottom?: boolean;
+  /** Shrinks the hero product + inspiration hub (container height, product size, inspiration image size) by this factor. 1 = full size. */
+  scale?: number;
 };
 
-const SIZE_DIMS: Record<string, { w: number; h: number }> = {
+const BASE_SIZE_DIMS: Record<string, { w: number; h: number }> = {
   xsmall: { w: 10, h: 70  },
   small:  { w: 13, h: 90  },
   medium: { w: 16, h: 115 },
@@ -41,7 +46,9 @@ const SLOTS = [
   { x: 8,  y: 58 }, // bottom-left
 ];
 
-const CENTER = { cx: 50, w: 42 };
+const BASE_CENTER = { cx: 50, w: 42 };
+const BASE_MIN_HEIGHT = 720;
+const BASE_CONTAINER_H = 560;
 
 function seededMatch(id: string): string {
   const hash = id.split("").reduce((acc, c, i) => acc + c.charCodeAt(0) * (i + 3) * 31, 0);
@@ -49,8 +56,14 @@ function seededMatch(id: string): string {
   return pct.toFixed(1);
 }
 
-export default function MoodboardCanvas({ product, inspirations }: Props) {
+export default function MoodboardCanvas({ product, inspirations, label = "MY ARRAY", roundedBottom = true, scale = 1 }: Props) {
   const matchPct = seededMatch(product.id);
+
+  const CENTER = { cx: BASE_CENTER.cx, w: BASE_CENTER.w * scale };
+  const minHeight = BASE_MIN_HEIGHT * scale;
+  const SIZE_DIMS: Record<string, { w: number; h: number }> = Object.fromEntries(
+    Object.entries(BASE_SIZE_DIMS).map(([key, { w, h }]) => [key, { w: w * scale, h: h * scale }])
+  );
 
   // Small images always go to bottom slots (2 & 3) so lines from top don't cross their labels
   const sortedInspirations = [...inspirations].sort((a, b) => {
@@ -59,10 +72,10 @@ export default function MoodboardCanvas({ product, inspirations }: Props) {
   });
 
   return (
-    <div className="relative w-full isolate rounded-2xl overflow-hidden" style={{ backgroundColor: "#FFFFFF", minHeight: "720px" }}>
+    <div className={`relative w-full isolate overflow-hidden ${roundedBottom ? "rounded-2xl" : "rounded-t-2xl"}`} style={{ backgroundColor: "#FFFFFF", minHeight: `${minHeight}px` }}>
       <div className="absolute top-4 right-4 z-20 flex items-center gap-2">
         <div className="flex flex-col items-end text-right">
-          <span className="text-xs font-bold text-zinc-900 leading-tight">MY ARRAY</span>
+          <span className="text-xs font-bold text-zinc-900 leading-tight">{label}</span>
           <span className="text-xs font-bold text-zinc-900 leading-tight">{matchPct}% MATCH</span>
         </div>
         <Image src="/images/MS-logomark-onwhite.svg" alt="MS" width={32} height={32} />
@@ -77,7 +90,7 @@ export default function MoodboardCanvas({ product, inspirations }: Props) {
         {SLOTS.slice(0, sortedInspirations.length).map((slot, i) => {
           const insp = sortedInspirations[i];
           const dims = SIZE_DIMS[insp.size ?? "medium"];
-          const containerH = 560;
+          const containerH = BASE_CONTAINER_H * scale;
           const imgHeightPct = (dims.h / containerH) * 100;
           const isCircle = insp.size === "xsmall" || insp.size === "small";
           // For circle images, run the line to image center (transparent/circular edges let it show through)
