@@ -22,7 +22,7 @@ export default function ProductGrid({ products, variant = "standalone" }: Props)
     <div className="grid grid-cols-3 gap-12">
       {products.map((product) => (
         <div key={product.id} className="flex flex-col gap-2">
-          <div className="relative w-full bg-white rounded-lg overflow-hidden shadow-[0_4px_32px_0_rgba(0,0,0,0.06)]" style={{ paddingBottom: "120%" }}>
+          <div className="relative w-full bg-white rounded-lg overflow-hidden shadow-[0_4px_32px_0_rgba(0,0,0,0.06)]" style={{ paddingBottom: "100%" }}>
             <Image
               src={product.image}
               alt={product.name}
