@@ -24,7 +24,7 @@ export default function ChatInput({ onSubmit, loading }: Props) {
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        placeholder="Describe a style or product… e.g. 'effortless 70s, earth tones'"
+        placeholder="Describe a product… e.g. 'effortless 70s, earth tones'"
         className="flex-1 bg-transparent text-sm text-black outline-none placeholder:text-zinc-400 py-1.5"
         disabled={loading}
       />
