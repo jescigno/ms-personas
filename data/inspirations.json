@@ -213,32 +213,11 @@
     "tags": ["pretend-play", "interactive", "character", "kids", "dora"]
   },
   {
-    "id": "reading-comprehension",
-    "label": "/LEARNING THEMES\n/READING COMPREHENSION",
-    "image": "/images/inspirations/dora-reading-comprehension.jpg",
-    "size": "large",
-    "tags": ["reading-comprehension", "learning", "books", "kids", "dora"]
-  },
-  {
     "id": "bilingual-spanish",
     "label": "/LEARNING THEMES\n/BILINGUAL SPANISH",
     "image": "/images/inspirations/dora-bilingual-spanish.jpg",
     "size": "large",
     "tags": ["bilingual-spanish", "bilingual", "learning", "kids", "dora"]
-  },
-  {
-    "id": "storytime",
-    "label": "/LEARNING THEMES\n/STORYTIME",
-    "image": "/images/inspirations/dora-storytime.jpg",
-    "size": "small",
-    "tags": ["storytime", "books", "learning", "kids", "dora"]
-  },
-  {
-    "id": "age-5-7",
-    "label": "/LEARNING THEMES\n/AGE 5-7",
-    "image": "/images/inspirations/dora-age-5-7.jpg",
-    "size": "small",
-    "tags": ["age-5-7", "age-6", "kids", "dora"]
   },
    {
     "id": "shop-local",
