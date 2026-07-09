@@ -5,6 +5,7 @@ import inspirations from "@/data/inspirations.json";
 import products from "@/data/products.json";
 import Image from "next/image";
 import Link from "next/link";
+import ErrorCollage from "@/app/components/ErrorCollage";
 import MoodboardCanvas from "@/app/components/MoodboardCanvas";
 import ProductGrid from "@/app/components/ProductGrid";
 
@@ -286,6 +287,19 @@ export default function MappingPage() {
                 </div>
               );
             })}
+
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-zinc-900 flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">!</span>
+                </div>
+                <h3 className="text-lg font-semibold tracking-widest uppercase text-zinc-900">Error</h3>
+                <span className="text-xs text-zinc-400">1 layout</span>
+              </div>
+              <div className="max-w-4xl">
+                <ErrorCollage />
+              </div>
+            </div>
           </section>
         )}
         </div>

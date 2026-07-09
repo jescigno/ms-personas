@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ChatInput from "./components/ChatInput";
+import ErrorCollage from "./components/ErrorCollage";
 import MoodboardCanvas from "./components/MoodboardCanvas";
 import ProductGrid from "./components/ProductGrid";
 import ProfileSwitcher, { type Profile } from "./components/ProfileSwitcher";
@@ -37,11 +38,20 @@ export default function Home() {
   const [submittedQuery, setSubmittedQuery] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showErrorDemo, setShowErrorDemo] = useState(false);
 
   async function handleQuery(query: string) {
     setSubmittedQuery(query);
-    setLoading(true);
     setError(null);
+    setResult(null);
+
+    if (query.trim().toLowerCase() === "error") {
+      setShowErrorDemo(true);
+      return;
+    }
+    setShowErrorDemo(false);
+
+    setLoading(true);
     try {
       const res = await fetch("/api/moodboard", {
         method: "POST",
@@ -63,6 +73,7 @@ export default function Home() {
     setResult(null);
     setSubmittedQuery(null);
     setError(null);
+    setShowErrorDemo(false);
   }
 
   return (
@@ -102,6 +113,15 @@ export default function Home() {
         {loading && (
           <div className="flex items-center justify-center py-24 text-sm text-zinc-400 tracking-widest uppercase">
             Generating…
+          </div>
+        )}
+
+        {showErrorDemo && !loading && (
+          <div className="flex flex-col gap-4">
+            <ErrorCollage />
+            <p className="text-black text-right" style={{ fontSize: "16px" }}>
+              We&apos;re still building Main Street and are continuing to add features. Please try again.
+            </p>
           </div>
         )}
 
